@@ -775,7 +775,7 @@ h5 {
     background-image: url(/assets/img/halloffamelogo.png); }
     /*#features .feature-img-right:hover {
       background-image: url("/assets/img/Homepage_Icons/Icon_LTC_Red.png"); }*/
-#features .feature-img-botleft {
+  #features .feature-img-botleft {
     background-image: url(/assets/img/tohostlogo.png);
   }
   #features .feature-img-botcenter {
