@@ -776,13 +776,13 @@ h5 {
     /*#features .feature-img-right:hover {
       background-image: url("/assets/img/Homepage_Icons/Icon_LTC_Red.png"); }*/
 #features .feature-img-botleft {
-    background-image: url(/assets/img/tohostlogo.png);
+    background-image: url(/img/tohostlogo.png);
   }
   #features .feature-img-botcenter {
-    background-image: url(/assets/img/eventspace.png);
+    background-image: url(/img/eventspace.png);
   }
   #features .feature-img-botright{
-    background-image: url(/assets/img/joylogo.png):
+    background-image: url(/img/joylogo.png):
   }
 
 /* =============================================
