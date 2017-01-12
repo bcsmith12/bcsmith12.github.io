@@ -1,0 +1,585 @@
+<!-- Header content -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Awesome Inc Game - WebGL" >
+    <meta property="og:description" content="Create and grow high tech startups.  Awesome Inc offers an accelerator, coding school, and a coworking space for entrepreneurs." >
+    <meta property="description" content="Create and grow high tech startups.  Awesome Inc offers an accelerator, coding school, and a coworking space for entrepreneurs." >
+    <meta property="og:url" content="http://localhost:4000/core-value-training/webgl/" >
+    <meta name="author" content="Awesome Inc">
+    <meta name="google-site-verification" content="ZHa3CqXpt-ieUEB4w2KPISG0VTXYEnoGFNtCsaY3yeo" />
+   	<title>Awesome Inc Game - WebGL | Awesome Inc</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.js" defer="defer"></script>
+  	<script src="/assets/js/jquery-1.9.1.min.js" defer="defer"></script>
+	<script src="/assets/js/dropdown.js" type="text/javascript" defer="defer"></script>
+  <script src="/assets/js/main.js" type="text/javascript" defer="defer"></script>
+  <script src="/assets/js/modernizr.custom.js" type="text/javascript" defer="defer"></script>
+
+  	<!-- stay connected javascript -->
+
+  	<script src="/assets/js/modalPopLite.js" defer="defer"></script>
+    <script src="/assets/js/modalPopLite.min.js" defer="defer"></script>
+    <script src="/assets/js/two.min.js"></script>
+	
+		<!-- team alpha img layover -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css" media="screen"/>
+	
+    <!-- Bootstrap core CSS -->
+
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/main.css" rel="stylesheet">
+
+    <!-- Custom styles for SVG Pipeline Graphic -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/interactive-svg.css" />
+
+    <!-- Fonts -->
+    <link rel='stylesheet' type='text/css' href='/assets/css/exo-font.css' />
+
+
+    <!-- SCSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+
+	<!-- Popup CSS -->
+	<link href="/assets/css/modalPopLite.css" rel="stylesheet" type="text/css" defer="defer">
+
+	<!-- Google Fonts -->
+	
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+    
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="/assets/ico/favicon.ico"> 
+  <!-- 
+	facebook pixel conversion tracking 
+	created on: 5/7/2016
+-->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1180841131949838');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1180841131949838&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+  </head>
+
+  <body>
+    <!-- Fixed navbar -->
+    
+    <nav class="navbar navbar-default navbar-fixed-top navbar-static">
+    <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a href="/"><img src="/assets/img/logo.png" alt="Awesome Inc Logo" style="margin-top: 10px;"> </a>
+        </div>
+
+        <div class="navbar-collapse collapse navbar-inner">
+          
+            <ul id="sddm" class="nav navbar-nav right-nav"> <!-- RIGHT ALIGNED NAVBAR -->
+                <li  class="dropdown">    <!-- ABOUT -->
+                    <a href="/about/" 
+                    onmouseover="mopen('m1')" 
+                    onmouseout="mclosetime()">About
+                    </a>
+                    <div id="m1" onmouseover="mcancelclosetime()" 
+                onmouseout="mclosetime()">
+                            <a href="/about/#core-values">Core Values</a>
+                            <a href="http://blog.awesomeinc.org">Our Blog</a>
+                            <a href="/about/#events">Events</a>
+                            <a href="/culture-book.pdf">Culture Book</a>
+                            <a href="/impact_report">Impact Report</a>
+                    </div>
+                </li> 
+                <li  class="dropdown">  <!-- FOR ENTREPRENEURS -->
+                    <a href="/for-entrepreneurs/" 
+                    onmouseover="mopen('m2')" 
+                    onmouseout="mclosetime()">For Entrepreneurs
+                    </a>
+                    <div id="m2" onmouseover="mcancelclosetime()" 
+                onmouseout="mclosetime()">
+                            <a href="/for-entrepreneurs/#fellowship">Fellowship Program</a>
+                            <a href="/for-entrepreneurs/#5across">5 Across</a>
+                            <a href="/for-entrepreneurs/#cherub">Cherub Fund</a>
+                            <a href="/for-entrepreneurs/#swlex">Startup Weekend</a>
+                            <a href="/for-entrepreneurs/#hof">Entrepreneur Hall of Fame</a>
+                            <a href="/teamalphaservices">Team Alpha Services</a>
+                            <a href="/for-entrepreneurs/#idea">I Have an Idea</a>
+                    </div>
+                </li>
+                <li class="dropdown">    <!-- LEARN TO CODE -->
+                    <a href="http://www.awesomeincu.com" 
+                    onmouseover="mopen('m3')" 
+                    onmouseout="mclosetime()"
+                    >Learn to Code
+                    </a>
+                    <div id="m3" onmouseover="mcancelclosetime()" 
+                onmouseout="mclosetime()">
+                            <a href="http://www.awesomeincu.com/#courses">Upcoming Classes</a>
+                            <a href="http://awesomeincu.com/blog">The Blog</a>
+                            <a href="http://www.awesomeincu.com/register/">Register</a>
+                    </div>
+                </li>
+                <li  class="dropdown">   <!-- COWORKING -->
+                    <a href="/coworking/" 
+                    onmouseover="mopen('m4')" 
+                    onmouseout="mclosetime()">Coworking
+                    </a>
+                    <div id="m4" onmouseover="mcancelclosetime()" 
+                onmouseout="mclosetime()">
+                            <a href="/coworking/#features">Features</a>
+                      <a href="/coworking/#tour">Schedule a Tour</a>
+                            <a href="/coworking/#rent-space">Rent Space</a>
+                    </div>
+                </li>
+                <li  class="dropdown">  <!-- INTERNSHIPS -->
+                    <a href="/internships/" 
+                    onmouseover="mopen('m5')" 
+                    onmouseout="mclosetime()">Internships
+                    </a>
+                    <div id="m5" onmouseover="mcancelclosetime()" 
+                onmouseout="mclosetime()">
+                            <a href="https://docs.google.com/spreadsheet/embeddedform?formkey=dDNLRTI0MmcyYWtDSDZNNGZOVERfNUE6MQ">Apply Now</a>
+                            <a href="/internships/#who">Who We Are</a>
+                            <a href="/team-alpha">Current Team</a>
+                            <!--<a href="/team-alpha-alumni"> Alumni</a>-->
+                    </div>
+                </li>
+                <li>
+                    <a class="stay-connected" data-toggle="modal" data-target="#email-popup" style="color: rgb(184, 17, 36); cursor:pointer">Stay Connected</a>
+                </li>
+
+
+
+              </ul>
+          <!-- <div style="clear:both"></div> -->
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+ <!-- Modal Email Popup ############################################### -->
+ 
+    <div class="modal fade modal-popup" id="email-popup" tabindex="-1" role="dialog" aria-labelledby="emailLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times</span></button>
+                <img src="/assets/img/white_ainc_logo.png" id="emailLabel" alt="Awesome Inc Logo" />
+            </div>
+            <div class="modal-body">
+                <h5>Sign up now to get updates from Awesome Inc!</h5>
+                <form style="padding:0px" action="//awesomeinc.us2.list-manage.com/subscribe?u=5114422b2183673d50186748d&id=de5f188075" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div class="form-group">
+                        <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address here" required>
+                        <input type="submit" value="Join Now" name="subscribe" id="mc-embedded-subscribe" class="button">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+      
+    
+    <!-- /Modal Email Popup ############################
+
+    <!-- Body content ############################### -->
+    <div class="AwesomeIncGame-WebGL">
+      <div class="subheader awesomeincgame-page"> 
+  <div class="container custom-container">
+      <h1 class="img-overlay"> Core Value Training </h1>
+      <h2> WebGL </h2>
+    </div>
+</div>
+
+<div class="statement"> 
+  <div class="container">
+    <p>
+      This version of the game allows you to play without installing plug-ins. Some browsers may not support WebGL.
+    </p>
+    <h3>
+      <a type="button" class="btn btn-primary btn-action" href="/core-value-training/">Back to Core Value Training</a>
+    </h3>
+  </div>
+</div>
+
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Awesome Inc Game</title>
+    <link rel="stylesheet" href="/assets/awesome-inc-game-webgl/TemplateData/style.css">
+    <link rel="shortcut icon" href="/assets/awesome-inc-game-webgl/TemplateData/favicon.ico" />
+    <script src="/assets/awesome-inc-game-webgl/TemplateData/UnityProgress.js"></script>
+  </head>
+
+  <body class="template">
+    <p class="header"><span>Unity WebGL Player | </span>AwesomeIncGame</p>
+    <div class="template-wrap clear">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="540px" width="960px"></canvas>
+          </div>
+        </div>
+
+
+        <!-- 
+        Notes: This removes the fullscreen button
+
+        <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+        -->
+
+
+        <div class="row">
+          <div class="col-lg-2 col-lg-offset-1">
+            <div class="logo"></div>
+          </div>
+          <div class="col-lg-2 col-lg-offset-6">
+            <div class="title">Awesome Inc Game</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+
+    <script type='text/javascript'>
+      // connect to canvas
+      var Module = {
+        TOTAL_MEMORY: 268435456,
+        filePackagePrefixURL: "/assets/awesome-inc-game-webgl/Release/",
+        memoryInitializerPrefixURL: "/assets/awesome-inc-game-webgl/Release/",
+        preRun: [],
+        postRun: [],
+        print: (function() {
+          return function(text) {
+            console.log (text);
+          };
+        })(),
+
+
+        /*
+         *  Notes: The following line causes a "pre-main prep time"
+         *          error in the javascript console
+         *
+        printErr: function(text) {
+          console.error (text);
+        },
+        *
+        *
+        */
+
+
+        canvas: document.getElementById('canvas'),
+        progress: null,
+        setStatus: function(text) {
+          if (this.progress == null) {
+            if (typeof UnityProgress != 'function')
+              return;
+            this.progress = new UnityProgress (canvas);
+          }
+          if (!Module.setStatus.last) Module.setStatus.last = { time: Date.now(), text: '' };
+          if (text === Module.setStatus.text) return;
+          this.progress.SetMessage (text);
+          var m = text.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/);
+          if (m)
+            this.progress.SetProgress (parseInt(m[2])/parseInt(m[4]));
+          if (text === "") 
+            this.progress.Clear()
+        },
+        totalDependencies: 0,
+        monitorRunDependencies: function(left) {
+          this.totalDependencies = Math.max(this.totalDependencies, left);
+          Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
+        }
+      };
+
+      Module.setStatus('Downloading (0.0/1)');
+    </script>
+
+    <script src="/assets/awesome-inc-game-webgl/Release/UnityConfig.js"></script>
+
+    <script src="/assets/awesome-inc-game-webgl/Release/fileloader.js"></script>
+
+    <script>
+      if (!(!Math.fround)) {
+        var script = document.createElement('script');
+        script.src = "/assets/awesome-inc-game-webgl/Release/awesome-inc-game-webgl.js";
+        document.body.appendChild(script);
+      } 
+      else {
+        var codeXHR = new XMLHttpRequest();
+        codeXHR.open('GET', '/assets/awesome-inc-game-webgl/Release/awesome-inc-game-webgl.js', true);
+        codeXHR.onload = function() {
+          var code = codeXHR.responseText;
+          if (!Math.fround) { 
+            try {
+              console.log('optimizing out Math.fround calls');
+              var m = /var ([^=]+)=global\.Math\.fround;/.exec(code);
+              var minified = m[1];
+              if (!minified) throw 'fail';
+              var startAsm = code.indexOf('// EMSCRIPTEN_START_FUNCS');
+              var endAsm = code.indexOf('// EMSCRIPTEN_END_FUNCS');
+              var asm = code.substring(startAsm, endAsm);
+              do {
+                var moar = false; // we need to re-do, as x(x( will not be fixed
+                asm = asm.replace(new RegExp('[^a-zA-Z0-9\\$\\_]' + minified + '\\(', 'g'), function(s) { moar = true; return s[0] + '(' });
+              } while (moar);
+              code = code.substring(0, startAsm) + asm + code.substring(endAsm);
+              code = code.replace("'use asm'", "'almost asm'");
+            } catch(e) { console.log('failed to optimize out Math.fround calls ' + e) }
+          }
+
+          var blob = new Blob([code], { type: 'text/javascript' });
+          codeXHR = null;
+          var src = URL.createObjectURL(blob);
+          var script = document.createElement('script');
+          script.src = URL.createObjectURL(blob);
+          script.onload = function() {
+            URL.revokeObjectURL(script.src);
+          };
+          document.body.appendChild(script);
+        };
+        codeXHR.send(null);
+      }
+    </script>
+
+    <script type="text/javascript">
+      // Prevents key presses from bubbling out to the browser window
+      var ignore_keycodes = [37,38,39,40];
+
+      window.addEventListener('keydown', function(e) {
+        if (ignore_keycodes.indexOf(e.keyCode) > -1) { e.preventDefault(); }
+      });
+    </script>
+
+  </body>
+
+</html>
+
+    </div>
+
+    <!-- Footer content #################################### -->
+
+		<div id="social">
+		<div class="container">
+			<div class="row centered">
+				<h2>Connect with Us.</h2>
+				<br>
+				<br>
+				<div class="col-lg-2 col-lg-offset-2">
+					<a href="http://twitter.com/awesome_inc" target="_blank"><i class="fa fa-twitter"></i></a>
+				</div><!-- /col -->
+				<div class="col-lg-2">
+					<a href="http://facebook.com/awesomeincorporated" target="_blank"><i class="fa fa-facebook"></i></a>				
+				</div><!-- /col -->
+				<div class="col-lg-2">
+					<a href="http://www.youtube.com/AincTelevision" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div><!-- /col -->
+				<div class="col-lg-2">
+					<a href="http://www.flickr.com/photos/awesomeinc/" target="_blank"><i class="fa fa-flickr"></i></a>
+				</div><!-- /col -->
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div>
+
+ 
+<!-- Footer Wrap -->
+<footer>
+	<!-- <div id="f"> -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+				
+					<h3>About Awesome Inc</h3>
+					<p>We exist to create and grow high tech startups. We do this by hosting community events, leading technology education courses, and offering a shared workspace environment. <br><a href="/culture-book.pdf" >View Our Culture Book</a></p>
+		
+				</div>
+			
+				<div class="col-lg-4" id="footer-links">
+					
+					<h3>Our Headquarters</h3>
+					<p><a href="http://maps.google.com/maps/place?ie=UTF8&q=awesome+inc&fb=1&gl=us&hq=awesome+inc&hnear=Lexington,+KY+40507&cid=8954829338718477855&t=h&z=14" >
+						348 E. Main St.<br/>
+						Lexington, KY 40507</a><br/>
+						<a href="tel:+15022099960">502-209-9960</a><br/>
+						<a href="mailto:founders@awesomeinc.org">founders@awesomeinc.org</a><br>
+
+						<!-- Parking Modal -->
+						<b><a data-toggle="modal" href="#parking">Parking</a></b>
+					
+							<div class="container">
+								<div class="row centered">
+	
+											  <div class="modal fade" id="parking" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											    <div class="modal-dialog">
+											      <div class="modal-content">
+											        <div class="modal-header">
+											          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+											          <h4 class="modal-title">Parking</h4>
+											        </div>
+											        <div class="modal-body">
+											          <p>
+														  <b>Where you can park:</b><br><br>
+
+														  Check out the <a href="https://maps.google.com/maps/ms?f=q&source=s_q&hl=en&geocode=&ie=UTF8&hq=parking+near+awesome+inc&hnear=&msa=0&msid=114116276748560767348.000478ba713245b668b31&ll=38.041577,-84.492438&spn=0.003333,0.004823&t=h&z=18" ><u>Map of Parking</u></a> near Awesome Inc.<br><br>
+
+														  <b>Park Here:</b><br>
+
+														   Option 1: Behind building at the corner of Main and Midland/E. Vine (formerly People’s Exchange Bank)  <br>Option 2: Lot to the left of Awesome Inc building <br> Option 3: Metered spots behind the building (on Water St.) <br> Option 4:Parking Garage - across the street, under “Main and Vine” apartment/condo complex.<br><br>
+
+														 <b> Do Not Park:</b><br>
+
+														  Outside the retail plaza (in front of garage) <br>Spaces marked for Wells Fargo, Commerce Lexington, Porter Paints or VisitLex<br>
+													  
+							          
+											          </p>
+											        </div>
+											        <div class="modal-footer">
+											          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											        </div>
+											      </div><!-- /.modal-content -->
+											    </div><!-- /.modal-dialog -->
+											  </div><!-- /.modal -->
+		
+								</div><!-- /row -->
+							</div><!-- /container -->
+							<!-- Parking Modal -->
+					</p>
+			
+				</div>
+				<div class="col-lg-4">
+				
+					<h3>Newsletter</h3>
+					<p>Get monthly updates from the Awesome Inc community.</p>
+
+					<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+
+					<div id="mc_embed_signup">
+					<form style="padding:0px" action="//awesomeinc.us2.list-manage.com/subscribe/post?u=5114422b2183673d50186748d&amp;id=de5f188075" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+						<input style="margin: auto; width:170px" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+						<div style="margin-bottom:5px;" class="clear footer-signup">
+							<input style="margin: auto;margin-top: 1em; background-color:#d43f3a" onmouseover="this.style.color='rgb(255,155,155)'" onmouseout="this.style.color='white'" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+						</div>
+					</form>
+					</div>
+				
+				</div>
+			</div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	<!-- </div> --><!-- /Footer wrap -->
+</footer>
+
+<div class="community-footer">
+    <div class="container">
+      <div class="row items">
+        <div class="col-lg-10 col-lg-offset-1">
+        <table class="table">
+          <tr>
+            <th>
+              <img src="/assets/img/ainc_community_logo.png" alt="awesome inc logo"/> Community
+            </th>
+            <th>
+              <img src="/assets/img/ainc_community_logo.png" alt="awesome inc logo"/> About
+            </th>
+            <th>
+              <img src="/assets/img/ainc_community_logo.png" alt="awesome inc logo"/> Coworking
+            </th>
+          </tr>
+          <tr>
+            <td><a href="http://www.awesomeinc.org" >Awesome Inc</a></td>
+            <td><a href="http://www.awesomeinc.org/about/#core-values" >Core Values</a></td>
+            <td><a href="http://www.awesomeinc.org/internships" >Internships</a></td>
+          </tr>
+          <tr>
+            <td><a href="#" >APAX Software</a></td>
+            <td><a href="http://blog.awesomeinc.org" >Our Blog</a></td>
+            <td><a href="http://www.awesomeinc.org/coworking/#tour" >Schedule a Tour</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://awesomeincu.com" >Awesome Inc U</a></td>
+            <td><a href="http://www.awesomeinc.org/about/#events" >Programs & Events</a></td>
+            <td><a href="http://awesomeinc.org" >Rent Space</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://fellowship.awesomeinc.org" >Awesome Fellowship</a></td>
+            <td><a href="http://awesomeinc.org/press" >Press</a></td>
+            <td><a href="http://awesomeinc.org/parking" >Parking</a></td>
+          </tr>
+          <tr>
+            <td><a href="/our-jobs">Careers</a></td>
+            <td><a href="/contact">Contact Us</a></td>
+            <td><a href="https://www.google.com/maps/place/348+E+Main+St,+Lexington,+KY+40507/@38.0419107,-84.4933001,17z/data=!4m2!3m1!1s0x884244e844532c33:0xb6919957af36b713" >Map</a></td>
+          </tr>
+        </table>
+        </div> <!-- /col-lg-10 -->
+      </div> <!-- /row items -->
+    </div> <!-- /container -->
+
+</div>
+
+<div id="sponsors">
+	<div class="container">
+		<div class="col-md-8 col-md-offset-2">
+			<h4 style="color:white;">Sponsors:</h2>
+			<a href="http://www.commercelexington.com/" >
+				<img class="sponsor_img" src="/assets/img/commerce_lex_footer_logo.png" alt="commerce lexington logo" />
+			</a>
+			<a href="http://apaxsoftware.com/" >
+				<img class="sponsor_img" src="/assets/img/apax_footer_logo.png" alt="apax software logo" />
+			</a>
+			<a href="mailto:William.dominick@charter.com">
+				<img class="sponsor_img" src="/assets/img/twc.png" style="height: 35px;" alt="time warner cable" />
+			</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+	<!-- Google Analytics JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-2028878-9']);
+	  _gaq.push(['_setDomainName', 'awesomeinc.org']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+  </body>
+</html>
