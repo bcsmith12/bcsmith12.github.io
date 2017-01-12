@@ -764,17 +764,17 @@ h5 {
         width: 80px;
         height: 80px; } }
   #features .feature-img-left {
-    background-image: url("/assets/img/Homepage_Icons/Icon_For-Entrepreneurs.png"); }
-    #features .feature-img-left:hover {
-      background-image: url("/assets/img/Homepage_Icons/Icon_For-Entrepreneurs_Red.png"); }
+    background-image: url(/assets/img/toteachlogo.png); }
+    /*#features .feature-img-left:hover {
+      background-image: url("/assets/img/Homepage_Icons/Icon_For-Entrepreneurs_Red.png"); }*/
   #features .feature-img-center {
-    background-image: url("/assets/img/Homepage_Icons/Icon_Coworking.png"); }
-    #features .feature-img-center:hover {
-      background-image: url("/assets/img/Homepage_Icons/Icon_Coworking_Red.png"); }
+    background-image: url(/assets/img/lightbulblogo.png); }
+    /*#features .feature-img-center:hover {
+      background-image: url("/assets/img/Homepage_Icons/Icon_Coworking_Red.png"); }*/
   #features .feature-img-right {
-    background-image: url("/assets/img/Homepage_Icons/Icon_LTC.png"); }
-    #features .feature-img-right:hover {
-      background-image: url("/assets/img/Homepage_Icons/Icon_LTC_Red.png"); }
+    background-image: url(/assets/img/halloffamelogo.png); }
+    /*#features .feature-img-right:hover {
+      background-image: url("/assets/img/Homepage_Icons/Icon_LTC_Red.png"); }*/
 
 /* =============================================
 				Section for pages
